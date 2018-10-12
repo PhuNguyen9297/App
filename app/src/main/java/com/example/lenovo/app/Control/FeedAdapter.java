@@ -1,4 +1,4 @@
-package com.example.lenovo.app;
+package com.example.lenovo.app.Control;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.lenovo.app.R;
+import com.example.lenovo.app.model.testing;
 
 import java.util.List;
 

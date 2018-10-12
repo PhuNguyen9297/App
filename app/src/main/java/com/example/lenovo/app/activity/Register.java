@@ -13,6 +13,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.lenovo.app.R;
+import com.example.lenovo.app.model.URL;
 import com.example.lenovo.app.model.VolleyRequest;
 
 import java.util.HashMap;
@@ -21,6 +22,7 @@ import java.util.Map;
 public class Register extends AppCompatActivity {
     private EditText edtUser, edtGmail, edtPass;
     private Button btnRegis;
+    private URL url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +43,7 @@ public class Register extends AppCompatActivity {
     }
 
     private void registration(){
-        String url = "http://192.168.44.215:3000/application/regis";
-
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url.getHttp() + url.getRegis(),
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

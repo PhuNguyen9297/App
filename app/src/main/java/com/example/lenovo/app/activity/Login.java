@@ -17,7 +17,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.lenovo.app.R;
-import com.example.lenovo.app.URL;
+import com.example.lenovo.app.model.URL;
 import com.example.lenovo.app.model.VolleyRequest;
 
 import java.util.HashMap;
@@ -73,13 +73,13 @@ public class Login extends AppCompatActivity {
     }
 
     private void login(){
-        String url = "http://192.168.44.215:3000/application";
         progressBar.setVisibility(View.VISIBLE);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url.getHttp() + url.getLogin(),
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+                        //if(response == something ){}
                         Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), NewFeedTest.class);
                         startActivity(intent);

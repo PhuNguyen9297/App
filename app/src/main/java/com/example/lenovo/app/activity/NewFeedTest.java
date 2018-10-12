@@ -10,10 +10,10 @@ import android.widget.Toast;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.example.lenovo.app.FeedAdapter;
+import com.example.lenovo.app.Control.FeedAdapter;
 import com.example.lenovo.app.R;
 import com.example.lenovo.app.model.VolleyRequest;
-import com.example.lenovo.app.testing;
+import com.example.lenovo.app.model.testing;
 
 import org.json.JSONArray;
 import org.json.JSONException;

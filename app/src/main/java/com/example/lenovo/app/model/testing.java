@@ -1,4 +1,4 @@
-package com.example.lenovo.app;
+package com.example.lenovo.app.model;
 
 public class testing {
     private int userId;

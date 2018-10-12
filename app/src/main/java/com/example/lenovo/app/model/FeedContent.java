@@ -1,4 +1,4 @@
-package com.example.lenovo.app;
+package com.example.lenovo.app.model;
 
 public class FeedContent {
     private int idEvent, idUser, Upvote, Downvote, idPlace, idGroup, idType;
