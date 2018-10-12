@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentTv"
+            android:text="huyen"
+            android:textColor="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/scoreTv"
+                android:layout_gravity="center" />
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/downvoteBtn"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"
+                android:src="@drawable/ic_baseline_arrow_downward_24px"/>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/upvoteBtn"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="#0000"
+                android:src="@drawable/ic_baseline_arrow_upward_24px"/>
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/commentBtn"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:background="#0000"
+                android:src="@drawable/ic_baseline_insert_comment_24px"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/commentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="left"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginTop="20dp"/>
+
+</LinearLayout>
