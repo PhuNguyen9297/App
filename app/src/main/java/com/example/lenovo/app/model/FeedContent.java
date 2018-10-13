@@ -4,12 +4,6 @@ public class FeedContent {
     private int idEvent, idUser, Upvote, Downvote, idPlace, idGroup, idType;
     private String Name, Start_Time, End_Time, Link, Image, Place;
 
-    public FeedContent() {
-        this.idUser = 1;
-        this.idPlace = 1;
-        this.idGroup = 1;
-        this.idType = 1;
-    }
 
     public void setLink(String link) {
         Link = link;

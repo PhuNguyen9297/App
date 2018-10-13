@@ -25,7 +25,6 @@ import java.util.List;
 public class NewFeedTest extends AppCompatActivity {
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;
-    private DividerItemDecoration dividerItemDecoration;
     private List<testing> list;
     private RecyclerView.Adapter adapter;
 
@@ -41,9 +40,6 @@ public class NewFeedTest extends AppCompatActivity {
         adapter = new FeedAdapter(getApplicationContext(), list);
 
         linearLayoutManager = new LinearLayoutManager(this);
-//        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-//
-//        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
 
