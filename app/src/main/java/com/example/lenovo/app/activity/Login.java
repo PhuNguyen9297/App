@@ -38,6 +38,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        url = new URL();
 
         requestQueue = VolleyRequest.getInstance(getApplicationContext()).getRequestQueue();
         requestQueue.start();
