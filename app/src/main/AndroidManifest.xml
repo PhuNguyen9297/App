@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.Register" />
-        <activity android:name=".activity.NewFeedTest"></activity>
+        <activity android:name=".activity.NewFeedTest" />
+        <activity android:name=".activity.NewFeed"></activity>
     </application>
 
 </manifest>

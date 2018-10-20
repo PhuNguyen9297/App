@@ -2,16 +2,22 @@ package com.example.lenovo.app.model;
 
 public class FeedContent {
     private int idEvent, idUser, Upvote, Downvote, idPlace, idGroup, idType;
-    private String Name, Start_Time, End_Time, Link, Image, Place;
+    private String Name;
+    private String Start_Time;
+    private String End_Time;
+    private String Link;
+    private String Image;
+    private String Place;
 
-
-    public void setLink(String link) {
-        Link = link;
+    public String getText() {
+        return Text;
     }
 
-    public String getLink() {
-        return Link;
+    public void setText(String text) {
+        Text = text;
     }
+
+    private String Text;
 
     public int getIdEvent() {
         return idEvent;
@@ -67,5 +73,53 @@ public class FeedContent {
 
     public void setIdType(int idType) {
         this.idType = idType;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getStart_Time() {
+        return Start_Time;
+    }
+
+    public void setStart_Time(String start_Time) {
+        Start_Time = start_Time;
+    }
+
+    public String getEnd_Time() {
+        return End_Time;
+    }
+
+    public void setEnd_Time(String end_Time) {
+        End_Time = end_Time;
+    }
+
+    public String getLink() {
+        return Link;
+    }
+
+    public void setLink(String link) {
+        Link = link;
+    }
+
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
+    }
+
+    public String getPlace() {
+        return Place;
+    }
+
+    public void setPlace(String place) {
+        Place = place;
     }
 }

@@ -10,16 +10,16 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.lenovo.app.R;
-import com.example.lenovo.app.model.testing;
+import com.example.lenovo.app.model.FeedContent;
 
 import java.util.List;
 
 public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder> {
 
     private Context context;
-    private List<testing> list;
+    private List<FeedContent> list;
 
-    public FeedAdapter(Context context, List<testing> list) {
+    public FeedAdapter(Context context, List<FeedContent> list) {
         this.context = context;
         this.list = list;
     }
@@ -33,11 +33,8 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        testing test1 = list.get(position);
-        String s = test1.getBody();
-        holder.contentTv.setText(s);
-        //holder.contentTv.setText("huyen");
-
+        FeedContent feedContent = list.get(position);
+        holder.contentTv.setText(feedContent.getText());
     }
 
     @Override
@@ -51,6 +48,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder> {
 
         public ViewHolder(View view){
             super(view);
+
             commentTv = (TextView) view.findViewById(R.id.commentTv);
             contentTv = (TextView)view.findViewById(R.id.contentTv);
             scoreTv = (TextView)view.findViewById(R.id.scoreTv);
