@@ -18,6 +18,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder> {
 
     private Context context;
     private List<FeedContent> list;
+    private Event event;
 
     public FeedAdapter(Context context, List<FeedContent> list) {
         this.context = context;
@@ -35,6 +36,20 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         FeedContent feedContent = list.get(position);
         holder.contentTv.setText(feedContent.getText());
+
+        holder.upvoteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                event.upvote();
+            }
+        });
+
+        holder.downvoteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                event.downvote();
+            }
+        });
     }
 
     @Override
