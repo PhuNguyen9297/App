@@ -67,7 +67,7 @@ public class Login extends AppCompatActivity {
         skipTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), NewFeedTest.class);
+                Intent intent = new Intent(getApplicationContext(), NewFeed.class);
                 startActivity(intent);
             }
         });
@@ -81,8 +81,9 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         //if(response == something ){}
+
                         Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), NewFeedTest.class);
+                        Intent intent = new Intent(getApplicationContext(), NewFeed.class);
                         startActivity(intent);
                         progressBar.setVisibility(View.GONE);
                     }
